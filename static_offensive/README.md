@@ -1,7 +1,7 @@
 # Crypter - Payload File Version
 
 
-## 🕯️ Updated Ritual (New Usage)
+
 
 The build process now requires an additional step to prepare the external payload.
 
@@ -22,3 +22,10 @@ cl Crypter.c
 ```bash
 .\CrypterArtifact.exe payload.enc
 ```
+
+
+GCC Compile Command (For the Builder)
+To compile the modularized builder program on your host using GCC:
+
+bash
+gcc -I./include src/main.c src/builder.c -o CrypterBuilder
